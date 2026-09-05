@@ -459,7 +459,7 @@ export function RecipeDetailPage() {
       <div className="flex-1 flex flex-col min-w-0 h-full overflow-hidden border-l border-neutral-200/60 dark:border-neutral-800/60">
         
         {/* Fixed Top Control Bar - Docked at the top, does NOT scroll */}
-        <header className="shrink-0 z-40 px-4 sm:px-8 py-3.5 border-b border-neutral-200/80 dark:border-neutral-800/80 flex flex-wrap items-center justify-between gap-4 bg-[#fbf9f8]/95 dark:bg-[#121314]/95 backdrop-blur-md print:hidden">
+        <header className="shrink-0 z-40 pl-14 pr-4 md:px-8 py-3.5 border-b border-neutral-200/80 dark:border-neutral-800/80 flex flex-wrap items-center justify-between gap-4 bg-[#fbf9f8]/95 dark:bg-[#121314]/95 backdrop-blur-md print:hidden">
           <Button 
             variant="ghost" 
             size="sm"
