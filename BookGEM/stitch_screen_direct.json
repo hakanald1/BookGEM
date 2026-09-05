@@ -1,0 +1,290 @@
+{
+  "screenshot": {
+    "name": "projects/7763401598091081049/files/5479195610095522312",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UXjzQW_v062KwnweItKrJraBIpEm7HnZbDJgdX1CkDKdtRrGP4IsVuSGQJzqOq7b83KJwl5VpJWc64WsrydxmO4AribvI1c6hzoDwRp9MuErTnbXgLF2nXz8Q3wkM-9feIVeVC-HrgCU1Xg7mHlMRF0Qt4kmzD-BvEbO_P8O_pkgBIzXS-pK7sba_foWMyox9aqxmJf6wioSniYhFVqwxIiU7THeag9UFnagcLLqb6OaANp_ghlnRxTw"
+  },
+  "htmlCode": {
+    "name": "projects/7763401598091081049/files/18004920703879972998",
+    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YTdmZGQ5OTNmZDQwNWYxMTBlYTMyMTUzODQzEgsSBxCi1Y-ViBoYAZIBIwoKcHJvamVjdF9pZBIVQhM3NzYzNDAxNTk4MDkxMDgxMDQ5&filename=&opi=89354086",
+    "mimeType": "text/html"
+  },
+  "id": "178b32f2a59248e898607209a66c5b23",
+  "generatedBy": "figaro_agent",
+  "width": "2560",
+  "height": "6356",
+  "title": "Gourmet Mushroom Risotto Recipe",
+  "prompt": "Create a premium luxury recipe page for \"Wild Mushroom & Truffle Risotto\".\nFields to include:\n- Hero: Full-width high-end food photography with title \"Wild Mushroom & Truffle Risotto\" in elegant serif overlay.\n- Description: \"A sophisticated autumn classic, featuring hand-foraged earthy mushrooms, aromatic black truffle, and creamy Arborio rice finished with aged Parmigiano-Reggiano.\"\n- Metadata Row: Cuisine: Italian | Difficulty: Intermediate | Prep: 15m | Cook: 35m | Total: 50m | Servings: 4\n- Two-Column Layout:\n  - Left Column: Ingredients (checklist style): 400g Arborio rice, 1L warm vegetable stock, 300g mixed wild mushrooms, 2 shallots finely minced, 150ml dry white wine, 50g unsalted butter, 60g Parmigiano-Reggiano, 1 tbsp truffle oil, Fresh thyme.\n  - Right Column: Steps (numbered editorial sections): 1. Sauté Aromatics: Soften shallots in butter until translucent. 2. Toast Rice: Add Arborio rice, stirring until edges are transparent. 3. Deglaze: Pour in wine and simmer until absorbed. 4. Gradual Incorporation: Add stock one ladle at a time, stirring constantly. 5. Finish: Fold in sautéed mushrooms, cheese, and drizzle with truffle oil.\n- Nutrition Panel: 480 kcal | 22g Fat | 58g Carbs | 12g Protein (per serving).\n- Tags: Vegetarian, Gluten-Free, Autumn, Gourmet.\nStyle: Cookbook editorial, generous whitespace, thin dividers, neutral palette, sophisticated serif headers, modern sans-serif body.",
+  "name": "projects/7763401598091081049/screens/178b32f2a59248e898607209a66c5b23",
+  "theme": {
+    "colorMode": "LIGHT",
+    "font": "PLAYFAIR_DISPLAY",
+    "customColor": "#1a1a1a",
+    "headlineFont": "PLAYFAIR_DISPLAY",
+    "bodyFont": "INTER",
+    "labelFont": "INTER",
+    "namedColors": {
+      "surface_container_lowest": "#ffffff",
+      "inverse_surface": "#303031",
+      "on_background": "#1b1c1c",
+      "tertiary": "#000000",
+      "surface_dim": "#dbdad9",
+      "primary_fixed_dim": "#c8c6c5",
+      "error": "#ba1a1a",
+      "on_tertiary_fixed": "#1b1c19",
+      "on_primary_fixed": "#1c1b1b",
+      "background": "#fbf9f8",
+      "surface_variant": "#e4e2e2",
+      "secondary_container": "#fed488",
+      "on_error": "#ffffff",
+      "on_secondary": "#ffffff",
+      "on_primary_fixed_variant": "#474746",
+      "inverse_primary": "#c8c6c5",
+      "outline": "#747878",
+      "tertiary_container": "#1b1c19",
+      "on_secondary_container": "#785a1a",
+      "surface_container_high": "#e9e8e7",
+      "secondary_fixed": "#ffdea5",
+      "primary": "#000000",
+      "surface_tint": "#5f5e5e",
+      "primary_fixed": "#e5e2e1",
+      "on_tertiary_container": "#848480",
+      "tertiary_fixed": "#e4e2dd",
+      "on_surface_variant": "#444748",
+      "on_tertiary": "#ffffff",
+      "on_primary": "#ffffff",
+      "on_surface": "#1b1c1c",
+      "surface_bright": "#fbf9f8",
+      "on_error_container": "#93000a",
+      "tertiary_fixed_dim": "#c8c6c2",
+      "on_primary_container": "#858383",
+      "surface_container": "#efeded",
+      "on_secondary_fixed": "#261900",
+      "surface_container_low": "#f5f3f3",
+      "on_secondary_fixed_variant": "#5d4201",
+      "outline_variant": "#c4c7c7",
+      "on_tertiary_fixed_variant": "#474744",
+      "secondary_fixed_dim": "#e9c176",
+      "secondary": "#775a19",
+      "surface_container_highest": "#e4e2e2",
+      "error_container": "#ffdad6",
+      "surface": "#fbf9f8",
+      "primary_container": "#1c1b1b",
+      "inverse_on_surface": "#f2f0f0"
+    },
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#1a1a1a",
+    "overrideSecondaryColor": "#c5a059",
+    "overrideTertiaryColor": "#f9f7f2",
+    "overrideNeutralColor": "#666666",
+    "spacingScale": 2,
+    "typography": {
+      "body-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "1.6",
+        "letterSpacing": "0.01em"
+      },
+      "display-lg-mobile": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "40px",
+        "fontWeight": "700",
+        "lineHeight": "1.2",
+        "letterSpacing": "-0.01em"
+      },
+      "label-caps": {
+        "fontFamily": "Inter",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "lineHeight": "1.2",
+        "letterSpacing": "0.1em"
+      },
+      "body-md": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "1.6"
+      },
+      "headline-sm": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "24px",
+        "fontWeight": "600",
+        "lineHeight": "1.4"
+      },
+      "caption": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "1.4"
+      },
+      "headline-md": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "32px",
+        "fontWeight": "600",
+        "lineHeight": "1.3"
+      },
+      "display-lg": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "64px",
+        "fontWeight": "700",
+        "lineHeight": "1.1",
+        "letterSpacing": "-0.02em"
+      }
+    },
+    "spacing": {
+      "margin-mobile": "20px",
+      "margin-desktop": "64px",
+      "gutter": "32px",
+      "section-gap": "128px",
+      "container-max": "1200px",
+      "unit": "8px"
+    },
+    "headlineFontFamily": "Playfair Display",
+    "bodyFontFamily": "Inter",
+    "labelFontFamily": "Inter"
+  },
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN",
+  "screenMetadata": {
+    "agentType": "PRO_AGENT",
+    "status": "COMPLETE",
+    "displayMode": "HTML"
+  },
+  "designSystem": {
+    "name": "assets/ec1f05042a8e43d9925bdca869e9486b",
+    "designSystem": {
+      "displayName": "Epicurean Editorial",
+      "styleGuidelines": "## Brand & Style\n\nThis design system embodies the sophistication of a high-end, hardbound culinary journal. The aesthetic is rooted in **Minimalism** with a focus on **Editorial** flair, prioritizing visual breathing room and exquisite typographic hierarchy over interface ornamentation.\n\nThe target audience consists of culinary enthusiasts and professionals who value precision, heritage, and the sensory experience of cooking. The UI should evoke a sense of calm, timelessness, and authority. Visual interest is generated through the juxtaposition of sharp, classical serifs against functional modern sans-serifs, complemented by large-scale photography and thin, deliberate strokes.\n\n## Layout & Spacing\n\nThis design system utilizes a **Fixed Grid** for desktop to mimic the structured layout of a printed book, transitioning to a fluid model for mobile.\n\n- **Vertical Rhythm:** A strict 8px baseline grid maintains alignment. \n- **Whitespace:** Use \"generous negative space.\" Section gaps should be substantial (128px+) to allow the user's eyes to rest between recipe stages.\n- **Dividers:** Use 1px \"Muted Gold\" or \"Slate\" horizontal rules to separate major content blocks. These should never span the full width of the container unless marking the end of a chapter.\n- **Mobile:** Reduce margins to 20px but maintain significant vertical spacing between elements to preserve the premium feel.\n\n## Elevation & Depth\n\nTo maintain the \"fine paper\" aesthetic, avoid drop shadows or heavy blurs. Depth is achieved through **Tonal Layers** and **Low-contrast outlines**.\n\n- **Surface Levels:** The base level is \"Vellum.\" Secondary surfaces (like ingredient cards or sidebar notes) should use a slightly lighter or darker tint of the neutral palette with a 1px border.\n- **Interaction:** Rather than lifting elements with shadows, use subtle color shifts or delicate \"Muted Gold\" underlines to indicate interactivity.\n- **Imagery:** Photos are treated as windows into the soul of the dish. They should be flush with the grid, using sharp corners to imply a high-quality print.\n\n## Components\n\n- **Buttons:** Rectangular with 0px radius. Primary buttons use \"Obsidian\" backgrounds with white text. Secondary buttons use a 1px \"Obsidian\" border with a gold hover state.\n- **Recipe Cards:** Minimalist frames with a 1px \"Slate\" border. The image should occupy the top half, with the recipe title in \"Playfair Display\" below. \n- **Input Fields:** Bottom-border only (ghost style) to mimic a signature line in a guestbook. Use \"Inter\" for placeholder text.\n- **Chips/Tags:** Small, all-caps text with a subtle 1px border. No background fill.\n- **Lists:** Ingredient lists should use custom gold-colored bullets or simple numerical values in \"Playfair Display\" to add an elegant rhythmic element to the page.\n- **Progress Indicators:** A thin, \"Muted Gold\" horizontal line at the top of the viewport to track recipe completion.",
+      "theme": {
+        "colorMode": "LIGHT",
+        "font": "PLAYFAIR_DISPLAY",
+        "customColor": "#1a1a1a",
+        "headlineFont": "PLAYFAIR_DISPLAY",
+        "bodyFont": "INTER",
+        "labelFont": "INTER",
+        "namedColors": {
+          "on_primary_fixed": "#1c1b1b",
+          "secondary_fixed_dim": "#e9c176",
+          "surface": "#fbf9f8",
+          "surface_container": "#efeded",
+          "tertiary_fixed_dim": "#c8c6c2",
+          "on_tertiary_fixed_variant": "#474744",
+          "on_error_container": "#93000a",
+          "on_surface_variant": "#444748",
+          "surface_container_highest": "#e4e2e2",
+          "on_primary": "#ffffff",
+          "on_surface": "#1b1c1c",
+          "on_error": "#ffffff",
+          "on_secondary_container": "#785a1a",
+          "surface_container_high": "#e9e8e7",
+          "on_primary_fixed_variant": "#474746",
+          "primary_container": "#1c1b1b",
+          "inverse_on_surface": "#f2f0f0",
+          "secondary": "#775a19",
+          "error_container": "#ffdad6",
+          "surface_dim": "#dbdad9",
+          "tertiary": "#000000",
+          "surface_tint": "#5f5e5e",
+          "surface_container_lowest": "#ffffff",
+          "on_secondary_fixed_variant": "#5d4201",
+          "on_background": "#1b1c1c",
+          "outline_variant": "#c4c7c7",
+          "on_secondary_fixed": "#261900",
+          "primary": "#000000",
+          "error": "#ba1a1a",
+          "on_primary_container": "#858383",
+          "outline": "#747878",
+          "inverse_surface": "#303031",
+          "secondary_container": "#fed488",
+          "surface_container_low": "#f5f3f3",
+          "on_secondary": "#ffffff",
+          "background": "#fbf9f8",
+          "inverse_primary": "#c8c6c5",
+          "secondary_fixed": "#ffdea5",
+          "on_tertiary": "#ffffff",
+          "tertiary_container": "#1b1c19",
+          "surface_variant": "#e4e2e2",
+          "primary_fixed_dim": "#c8c6c5",
+          "surface_bright": "#fbf9f8",
+          "primary_fixed": "#e5e2e1",
+          "on_tertiary_container": "#848480",
+          "tertiary_fixed": "#e4e2dd",
+          "on_tertiary_fixed": "#1b1c19"
+        },
+        "designMd": "---\nname: Epicurean Editorial\ncolors:\n  surface: '#fbf9f8'\n  surface-dim: '#dbdad9'\n  surface-bright: '#fbf9f8'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f5f3f3'\n  surface-container: '#efeded'\n  surface-container-high: '#e9e8e7'\n  surface-container-highest: '#e4e2e2'\n  on-surface: '#1b1c1c'\n  on-surface-variant: '#444748'\n  inverse-surface: '#303031'\n  inverse-on-surface: '#f2f0f0'\n  outline: '#747878'\n  outline-variant: '#c4c7c7'\n  surface-tint: '#5f5e5e'\n  primary: '#000000'\n  on-primary: '#ffffff'\n  primary-container: '#1c1b1b'\n  on-primary-container: '#858383'\n  inverse-primary: '#c8c6c5'\n  secondary: '#775a19'\n  on-secondary: '#ffffff'\n  secondary-container: '#fed488'\n  on-secondary-container: '#785a1a'\n  tertiary: '#000000'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#1b1c19'\n  on-tertiary-container: '#848480'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#e5e2e1'\n  primary-fixed-dim: '#c8c6c5'\n  on-primary-fixed: '#1c1b1b'\n  on-primary-fixed-variant: '#474746'\n  secondary-fixed: '#ffdea5'\n  secondary-fixed-dim: '#e9c176'\n  on-secondary-fixed: '#261900'\n  on-secondary-fixed-variant: '#5d4201'\n  tertiary-fixed: '#e4e2dd'\n  tertiary-fixed-dim: '#c8c6c2'\n  on-tertiary-fixed: '#1b1c19'\n  on-tertiary-fixed-variant: '#474744'\n  background: '#fbf9f8'\n  on-background: '#1b1c1c'\n  surface-variant: '#e4e2e2'\ntypography:\n  display-lg:\n    fontFamily: Playfair Display\n    fontSize: 64px\n    fontWeight: '700'\n    lineHeight: '1.1'\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Playfair Display\n    fontSize: 40px\n    fontWeight: '700'\n    lineHeight: '1.2'\n    letterSpacing: -0.01em\n  headline-md:\n    fontFamily: Playfair Display\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: '1.3'\n  headline-sm:\n    fontFamily: Playfair Display\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: '1.4'\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: '1.6'\n    letterSpacing: 0.01em\n  body-md:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  label-caps:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: '1.2'\n    letterSpacing: 0.1em\n  caption:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: '1.4'\nspacing:\n  unit: 8px\n  container-max: 1200px\n  gutter: 32px\n  margin-desktop: 64px\n  margin-mobile: 20px\n  section-gap: 128px\n---\n\n## Brand & Style\n\nThis design system embodies the sophistication of a high-end, hardbound culinary journal. The aesthetic is rooted in **Minimalism** with a focus on **Editorial** flair, prioritizing visual breathing room and exquisite typographic hierarchy over interface ornamentation.\n\nThe target audience consists of culinary enthusiasts and professionals who value precision, heritage, and the sensory experience of cooking. The UI should evoke a sense of calm, timelessness, and authority. Visual interest is generated through the juxtaposition of sharp, classical serifs against functional modern sans-serifs, complemented by large-scale photography and thin, deliberate strokes.\n\n## Colors\n\nThe palette is restrained and organic, mimicking the materials of a luxury book: fine paper, charcoal ink, and gold leaf.\n\n- **Primary (#1A1A1A):** \"Obsidian\" - Used for high-contrast headlines and primary text to ensure absolute readability.\n- **Secondary (#C5A059):** \"Muted Gold\" - An accent reserved for meaningful highlights, interactive states, or decorative flourishes like dividers.\n- **Tertiary (#F9F7F2):** \"Vellum\" - The primary background color. It provides a warmer, softer experience than pure white, reducing eye strain during long-form reading.\n- **Neutral (#666666):** \"Slate\" - Used for secondary metadata, captions, and subtle borders.\n\n## Typography\n\nTypography is the primary vehicle for the brand’s luxury positioning. \n\n- **Headlines:** Use **Playfair Display**. Large display type should use tighter letter-spacing for a \"masthead\" feel.\n- **Body:** Use **Inter**. It provides a clean, systematic contrast to the serif headings, ensuring recipes and instructions are legible at a glance.\n- **Labels:** Use **Inter** in uppercase with generous tracking (letter-spacing) for category tags or ingredient headers to create a sense of organized luxury.\n- **Instructional Text:** Maintain a line height of at least 1.6 to ensure users can easily track their place while cooking.\n\n## Layout & Spacing\n\nThis design system utilizes a **Fixed Grid** for desktop to mimic the structured layout of a printed book, transitioning to a fluid model for mobile.\n\n- **Vertical Rhythm:** A strict 8px baseline grid maintains alignment. \n- **Whitespace:** Use \"generous negative space.\" Section gaps should be substantial (128px+) to allow the user's eyes to rest between recipe stages.\n- **Dividers:** Use 1px \"Muted Gold\" or \"Slate\" horizontal rules to separate major content blocks. These should never span the full width of the container unless marking the end of a chapter.\n- **Mobile:** Reduce margins to 20px but maintain significant vertical spacing between elements to preserve the premium feel.\n\n## Elevation & Depth\n\nTo maintain the \"fine paper\" aesthetic, avoid drop shadows or heavy blurs. Depth is achieved through **Tonal Layers** and **Low-contrast outlines**.\n\n- **Surface Levels:** The base level is \"Vellum.\" Secondary surfaces (like ingredient cards or sidebar notes) should use a slightly lighter or darker tint of the neutral palette with a 1px border.\n- **Interaction:** Rather than lifting elements with shadows, use subtle color shifts or delicate \"Muted Gold\" underlines to indicate interactivity.\n- **Imagery:** Photos are treated as windows into the soul of the dish. They should be flush with the grid, using sharp corners to imply a high-quality print.\n\n## Shapes\n\nThe shape language is **Sharp (0)**. \n\nSharp corners evoke the edges of a high-quality book and the precision of a chef's knife. Avoid rounded corners on buttons, cards, or input fields. This architectural rigidity reinforces the \"High-End Editorial\" feel.\n\n## Components\n\n- **Buttons:** Rectangular with 0px radius. Primary buttons use \"Obsidian\" backgrounds with white text. Secondary buttons use a 1px \"Obsidian\" border with a gold hover state.\n- **Recipe Cards:** Minimalist frames with a 1px \"Slate\" border. The image should occupy the top half, with the recipe title in \"Playfair Display\" below. \n- **Input Fields:** Bottom-border only (ghost style) to mimic a signature line in a guestbook. Use \"Inter\" for placeholder text.\n- **Chips/Tags:** Small, all-caps text with a subtle 1px border. No background fill.\n- **Lists:** Ingredient lists should use custom gold-colored bullets or simple numerical values in \"Playfair Display\" to add an elegant rhythmic element to the page.\n- **Progress Indicators:** A thin, \"Muted Gold\" horizontal line at the top of the viewport to track recipe completion.",
+        "colorVariant": "FIDELITY",
+        "overridePrimaryColor": "#1a1a1a",
+        "overrideSecondaryColor": "#c5a059",
+        "overrideTertiaryColor": "#f9f7f2",
+        "overrideNeutralColor": "#666666",
+        "spacingScale": 2,
+        "typography": {
+          "display-lg-mobile": {
+            "fontFamily": "Playfair Display",
+            "fontSize": "40px",
+            "fontWeight": "700",
+            "lineHeight": "1.2",
+            "letterSpacing": "-0.01em"
+          },
+          "headline-sm": {
+            "fontFamily": "Playfair Display",
+            "fontSize": "24px",
+            "fontWeight": "600",
+            "lineHeight": "1.4"
+          },
+          "body-lg": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "1.6",
+            "letterSpacing": "0.01em"
+          },
+          "headline-md": {
+            "fontFamily": "Playfair Display",
+            "fontSize": "32px",
+            "fontWeight": "600",
+            "lineHeight": "1.3"
+          },
+          "body-md": {
+            "fontFamily": "Inter",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "1.6"
+          },
+          "display-lg": {
+            "fontFamily": "Playfair Display",
+            "fontSize": "64px",
+            "fontWeight": "700",
+            "lineHeight": "1.1",
+            "letterSpacing": "-0.02em"
+          },
+          "caption": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "1.4"
+          },
+          "label-caps": {
+            "fontFamily": "Inter",
+            "fontSize": "12px",
+            "fontWeight": "600",
+            "lineHeight": "1.2",
+            "letterSpacing": "0.1em"
+          }
+        },
+        "spacing": {
+          "margin-mobile": "20px",
+          "gutter": "32px",
+          "margin-desktop": "64px",
+          "unit": "8px",
+          "container-max": "1200px",
+          "section-gap": "128px"
+        },
+        "headlineFontFamily": "Playfair Display",
+        "bodyFontFamily": "Inter",
+        "labelFontFamily": "Inter"
+      }
+    },
+    "version": "1"
+  }
+}
