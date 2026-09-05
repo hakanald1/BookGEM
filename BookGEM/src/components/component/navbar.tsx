@@ -144,7 +144,7 @@ export function NavigationMenuComponent() {
           </Button>
         </Link>
         <Link to="/signup">
-          <Button className="rounded-md px-[20px] py-[10px]">Sign Up</Button>
+          <Button className="rounded-md hidden sm:block px-[20px]">Sign Up</Button>
         </Link>
       </SignedOut>
       <SignedIn>
