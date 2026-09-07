@@ -194,7 +194,7 @@ export function Dashboard() {
           </div>
 
           {/* Diet Filter Pills on Right with large left separation */}
-          <div className="flex items-center gap-3 overflow-x-auto select-none shrink ml-auto pl-6 md:pl-16 lg:pl-28 max-w-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+          <div className=" hidden md:block md:flex md:items-center md:gap-3 md:overflow-x-auto md:select-none md:shrink md:ml-auto  md:pl-16 lg:pl-28 max-w-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {availableDietTags.map((tag) => (
               <button
                 key={tag}

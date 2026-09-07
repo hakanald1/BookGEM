@@ -116,7 +116,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
 
         {/* Layered Date Badge on Top Right of Image */}
         {dateLabel && (
-          <div className="absolute md:top-3 md:right-3 top-1.5 right-1.5 z-10 flex items-center gap-1.5 md:px-3 px-1.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs text-[10px] font-semibold shadow-md border border-white/10">
+          <div className="absolute md:top-3 md:right-3 top-1.5 right-1.5 z-10 flex items-center gap-1.5 md:px-3 px-1.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white md:text-xs text-[10px] font-semibold shadow-md border border-white/10">
             <Calendar className="h-3 w-3 text-[#CBA328]" />
             <span>{dateLabel}</span>
           </div>
@@ -166,9 +166,9 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
 
           {recipe && (
             <div className="text-sm space-y-2">
-              <div className="flex items-center justify-between gap-2 text-xs flex-wrap">
+              <div className="flex items-center justify-between gap-2 md:text-xs text-[10px] flex-wrap">
                 {recipe.difficulty ? (
-                  <span className={` md:block md:px-2.5 lg:px-2.5 px-1.5 py-0.5 rounded-md font-semibold capitalize ${
+                  <span className={` md:block md:px-2.5 lg:px-2.5 px-1.5 py-0.5 rounded-md font-semibold capitalize   ${
                     recipe.difficulty.toLowerCase() === 'easy'
                       ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
                       : recipe.difficulty.toLowerCase() === 'medium'
