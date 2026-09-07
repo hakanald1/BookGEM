@@ -83,7 +83,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
         {showBookmark && recipe && (
           <button
             onClick={handleBookmarkClick}
-            className={`absolute top-3 left-3 z-10 p-2 rounded-full backdrop-blur-md transition-all shadow-md cursor-pointer ${
+            className={` hidden md:block absolute top-3 left-3 z-10 p-2 rounded-full backdrop-blur-md transition-all shadow-md cursor-pointer ${
               isSaved 
                 ? "bg-[#CBA328] text-black" 
                 : "bg-black/60 text-white hover:text-[#CBA328]"
@@ -91,7 +91,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
             title={isSaved ? "Remove from saved recipes" : "Save Recipe"}
           >
             {isSaved ? (
-              <BookmarkCheck className="h-4 w-4 fill-current text-black" />
+              <BookmarkCheck className="h-4 w-4  fill-current text-black" />
             ) : (
               <Bookmark className="h-4 w-4" />
             )}
@@ -116,7 +116,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
 
         {/* Layered Date Badge on Top Right of Image */}
         {dateLabel && (
-          <div className="absolute top-3 right-3 z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs font-semibold shadow-md border border-white/10">
+          <div className="absolute md:top-3 md:right-3 top-1.5 right-1.5 z-10 flex items-center gap-1.5 md:px-3 px-1.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs text-[10px] font-semibold shadow-md border border-white/10">
             <Calendar className="h-3 w-3 text-[#CBA328]" />
             <span>{dateLabel}</span>
           </div>
