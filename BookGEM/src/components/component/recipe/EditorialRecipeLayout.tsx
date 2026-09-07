@@ -75,7 +75,7 @@ export function EditorialRecipeLayout({
   };
 
   return (
-    <div className="w-full flex flex-col pb-28 space-y-12 md:space-y-16">
+    <div className="w-full flex flex-col pb-28 space-y-12 md:space-y-16 bg-white text-neutral-900 selection:bg-[#775a19]/20 font-sans">
       
       {/* Grand Hero Banner with Atmospheric Culinary Photo */}
       <header className="relative w-full h-[55vh] md:h-[70vh] min-h-[440px] flex items-center justify-center overflow-hidden bg-neutral-950 shadow-md">
@@ -126,60 +126,60 @@ export function EditorialRecipeLayout({
       </header>
 
       {/* Main Editorial Content Container with Generous Spacing */}
-      <main className="max-w-[1160px] w-full mx-auto px-6 sm:px-10 md:px-14 space-y-16 md:space-y-20">
+      <main className="max-w-[1160px] w-full mx-auto px-6 sm:px-10 md:px-14 space-y-16 md:space-y-20 bg-white text-neutral-900">
         
         {/* Description Lead-in & Metadata Strip */}
         <section className="max-w-3xl mx-auto text-center space-y-10">
           {recipe.description && (
-            <p className="font-sans text-lg md:text-xl text-neutral-700 dark:text-neutral-300 leading-relaxed font-normal">
+            <p className="font-sans text-lg md:text-xl text-neutral-700 leading-relaxed font-normal">
               {recipe.description}
             </p>
           )}
 
           {/* Minimalist Metadata Divider Strip */}
-          <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 pt-4 pb-4 text-neutral-700 dark:text-neutral-300">
+          <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 pt-4 pb-4 text-neutral-700">
             <div className="flex flex-col items-center min-w-16">
-              <span className="text-[11px] font-bold uppercase tracking-widest text-[#775a19] dark:text-[#e9c176] mb-1">Cuisine</span>
+              <span className="text-[11px] font-bold uppercase tracking-widest text-[#775a19] mb-1">Cuisine</span>
               <span className="text-sm font-semibold capitalize">{recipe.cuisine || "International"}</span>
             </div>
 
-            <div className="w-px h-8 bg-neutral-300 dark:bg-neutral-700 hidden sm:block" />
+            <div className="w-px h-8 bg-neutral-300 hidden sm:block" />
 
             <div className="flex flex-col items-center min-w-16">
-              <span className="text-[11px] font-bold uppercase tracking-widest text-[#775a19] dark:text-[#e9c176] mb-1">Difficulty</span>
+              <span className="text-[11px] font-bold uppercase tracking-widest text-[#775a19] mb-1">Difficulty</span>
               <span className="text-sm font-semibold capitalize">{recipe.difficulty || "Easy"}</span>
             </div>
 
-            <div className="w-px h-8 bg-neutral-300 dark:bg-neutral-700 hidden sm:block" />
+            <div className="w-px h-8 bg-neutral-300 hidden sm:block" />
 
             <div className="flex flex-col items-center min-w-16">
-              <span className="text-[11px] font-bold uppercase tracking-widest text-[#775a19] dark:text-[#e9c176] mb-1">Prep</span>
+              <span className="text-[11px] font-bold uppercase tracking-widest text-[#775a19] mb-1">Prep</span>
               <span className="text-sm font-semibold">{displayPrepTime}</span>
             </div>
 
-            <div className="w-px h-8 bg-neutral-300 dark:bg-neutral-700 hidden sm:block" />
+            <div className="w-px h-8 bg-neutral-300 hidden sm:block" />
 
             <div className="flex flex-col items-center min-w-16">
-              <span className="text-[11px] font-bold uppercase tracking-widest text-[#775a19] dark:text-[#e9c176] mb-1">Cook</span>
+              <span className="text-[11px] font-bold uppercase tracking-widest text-[#775a19] mb-1">Cook</span>
               <span className="text-sm font-semibold">{displayCookTime}</span>
             </div>
 
-            <div className="w-px h-8 bg-neutral-300 dark:bg-neutral-700 hidden sm:block" />
+            <div className="w-px h-8 bg-neutral-300 hidden sm:block" />
 
             <div className="flex flex-col items-center min-w-16">
-              <span className="text-[11px] font-bold uppercase tracking-widest text-[#775a19] dark:text-[#e9c176] mb-1">Total</span>
+              <span className="text-[11px] font-bold uppercase tracking-widest text-[#775a19] mb-1">Total</span>
               <span className="text-sm font-semibold">{displayTotalTime}</span>
             </div>
 
-            <div className="w-px h-8 bg-neutral-300 dark:bg-neutral-700 hidden sm:block" />
+            <div className="w-px h-8 bg-neutral-300 hidden sm:block" />
 
             {/* Servings with quick adjuster */}
             <div className="flex flex-col items-center min-w-20">
-              <span className="text-[11px] font-bold uppercase tracking-widest text-[#775a19] dark:text-[#e9c176] mb-1">Servings</span>
+              <span className="text-[11px] font-bold uppercase tracking-widest text-[#775a19] mb-1">Servings</span>
               <div className="flex items-center gap-1.5">
                 <button 
                   onClick={() => setServingsMultiplier((m) => Math.max(0.25, m - 0.25))}
-                  className="text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors cursor-pointer p-0.5 print:hidden"
+                  className="text-neutral-400 hover:text-neutral-900 transition-colors cursor-pointer p-0.5 print:hidden"
                   title="Decrease servings"
                 >
                   <Minus className="h-3 w-3" />
@@ -187,7 +187,7 @@ export function EditorialRecipeLayout({
                 <span className="text-sm font-semibold px-1.5">{currentServings}</span>
                 <button 
                   onClick={() => setServingsMultiplier((m) => m + 0.25)}
-                  className="text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors cursor-pointer p-0.5 print:hidden"
+                  className="text-neutral-400 hover:text-neutral-900 transition-colors cursor-pointer p-0.5 print:hidden"
                   title="Increase servings"
                 >
                   <Plus className="h-3 w-3" />
@@ -201,9 +201,9 @@ export function EditorialRecipeLayout({
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* Left Column: Ingredients Card */}
-          <aside className="md:col-span-5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-8 sm:p-9 shadow-xs rounded-none space-y-6">
-            <div className="flex items-center justify-between border-b border-neutral-200 dark:border-neutral-800 pb-4">
-              <h2 className="font-serif text-2xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight">
+          <aside className="md:col-span-5 bg-white border border-neutral-200 p-8 sm:p-9 shadow-xs rounded-none space-y-6">
+            <div className="flex items-center justify-between border-b border-neutral-200 pb-4">
+              <h2 className="font-serif text-2xl font-bold text-neutral-900 tracking-tight">
                 Ingredients
               </h2>
               <span className="text-xs text-neutral-500 font-mono">
@@ -211,7 +211,7 @@ export function EditorialRecipeLayout({
               </span>
             </div>
 
-            <ul className="space-y-4 font-sans text-sm md:text-base text-neutral-800 dark:text-neutral-200">
+            <ul className="space-y-4 font-sans text-sm md:text-base text-neutral-800">
               {(recipe.ingredients || []).map((rawIng, idx) => {
                 const isChecked = !!checkedIngredients[idx];
                 const ing = parseIngredient(rawIng);
@@ -232,8 +232,8 @@ export function EditorialRecipeLayout({
                     <label 
                       className={`cursor-pointer transition-all leading-snug flex-1 ${
                         isChecked 
-                          ? 'line-through text-neutral-400 dark:text-neutral-500' 
-                          : 'group-hover:text-[#775a19] dark:group-hover:text-[#e9c176]'
+                          ? 'line-through text-neutral-400' 
+                          : 'group-hover:text-[#775a19]'
                       }`}
                     >
                       {(formattedQty || ing.unit) && (
@@ -252,11 +252,11 @@ export function EditorialRecipeLayout({
             </ul>
 
             {/* Servings footnote */}
-            <div className="pt-5 border-t border-neutral-200/60 dark:border-neutral-800/60 flex items-center justify-between text-xs text-neutral-500">
-              <span>Scaled for: <strong className="text-neutral-700 dark:text-neutral-300">{currentServings} {currentServings === 1 ? 'person' : 'people'}</strong></span>
+            <div className="pt-5 border-t border-neutral-200/60 flex items-center justify-between text-xs text-neutral-500">
+              <span>Scaled for: <strong className="text-neutral-700">{currentServings} {currentServings === 1 ? 'person' : 'people'}</strong></span>
               <button 
                 onClick={() => setServingsMultiplier(1)}
-                className="text-[#775a19] dark:text-[#e9c176] hover:underline cursor-pointer font-medium"
+                className="text-[#775a19] hover:underline cursor-pointer font-medium"
               >
                 Reset ({baseServings})
               </button>
@@ -265,7 +265,7 @@ export function EditorialRecipeLayout({
 
           {/* Right Column: Preparation Steps */}
           <section className="md:col-span-7 md:pl-2 space-y-8">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-neutral-900 tracking-tight mb-8">
               Preparation
             </h2>
 
@@ -284,29 +284,29 @@ export function EditorialRecipeLayout({
                     <div className={`flex flex-col sm:flex-row gap-5 items-start transition-opacity ${isDone ? 'opacity-50' : ''}`}>
                       
                       {/* Step Number in Grand Golden Serif */}
-                      <div className="shrink-0 font-serif text-3xl md:text-4xl font-semibold text-[#775a19] dark:text-[#e9c176] tracking-tighter w-12 pt-0.5">
+                      <div className="shrink-0 font-serif text-3xl md:text-4xl font-semibold text-[#775a19] tracking-tighter w-12 pt-0.5">
                         {stepNumFormatted}
                       </div>
 
                       {/* Step Instruction & Timer Controls */}
                       <div className="flex-1 space-y-2.5">
                         <div className="flex items-baseline justify-between gap-4">
-                          <h3 className="font-serif text-lg md:text-xl font-bold text-neutral-900 dark:text-neutral-100">
+                          <h3 className="font-serif text-lg md:text-xl font-bold text-neutral-900">
                             {title || `Step ${stepNumber}`}
                           </h3>
                           <button
                             onClick={() => toggleStepCheck(stepNumber)}
                             className={`text-xs font-medium px-2.5 py-0.5 rounded-full border transition-all cursor-pointer print:hidden ${
                               isDone 
-                                ? 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800' 
-                                : 'text-neutral-400 hover:text-neutral-700 border-neutral-200 dark:border-neutral-700'
+                                ? 'bg-emerald-50 text-emerald-700 border-emerald-200' 
+                                : 'text-neutral-400 hover:text-neutral-700 border-neutral-200'
                             }`}
                           >
                             {isDone ? '✓ Completed' : 'Mark done'}
                           </button>
                         </div>
 
-                        <p className="font-sans text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+                        <p className="font-sans text-sm md:text-base text-neutral-700 leading-relaxed">
                           {description || instructionText}
                         </p>
 
@@ -317,7 +317,7 @@ export function EditorialRecipeLayout({
                               size="sm"
                               variant="outline"
                               onClick={() => handleStartTimer(idx, durationMinutes)}
-                              className={`gap-1.5 text-xs font-semibold rounded-none border-neutral-300 dark:border-neutral-700 cursor-pointer ${
+                              className={`gap-1.5 text-xs font-semibold rounded-none border-neutral-300 cursor-pointer ${
                                 isTimerActiveForThisStep && isTimerRunning 
                                   ? 'border-[#775a19] bg-[#775a19]/10 text-[#775a19]' 
                                   : 'hover:border-[#775a19]'
@@ -335,7 +335,7 @@ export function EditorialRecipeLayout({
                             </Button>
 
                             {isTimerActiveForThisStep && (
-                              <div className="flex items-center gap-2 text-xs font-mono font-bold text-[#775a19] dark:text-[#fed488] bg-[#775a19]/10 px-3 py-1 border border-[#775a19]/30">
+                              <div className="flex items-center gap-2 text-xs font-mono font-bold text-[#775a19] bg-[#775a19]/10 px-3 py-1 border border-[#775a19]/30">
                                 <Clock className="h-3.5 w-3.5 animate-pulse" />
                                 <span>
                                   {Math.floor(timerSecondsLeft / 60)}:
@@ -350,7 +350,7 @@ export function EditorialRecipeLayout({
 
                     {/* Fine dividing line between steps */}
                     {idx < (recipe.steps || []).length - 1 && (
-                      <div className="h-px w-full bg-neutral-200 dark:bg-neutral-800" />
+                      <div className="h-px w-full bg-neutral-200" />
                     )}
                   </div>
                 );
@@ -360,28 +360,28 @@ export function EditorialRecipeLayout({
         </div>
 
         {/* Nutrition & Tags Editorial Footer Section with Luxurious Padding */}
-        <section className="border-t border-b border-neutral-200 dark:border-neutral-800 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+        <section className="border-t border-b border-neutral-200 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left space-y-2.5">
-            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[#775a19] dark:text-[#e9c176]">
+            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[#775a19]">
               Nutrition per serving
             </h3>
             {hasNutrition ? (
-              <div className="flex flex-wrap justify-center md:justify-start items-center gap-4 sm:gap-6 text-sm text-neutral-800 dark:text-neutral-200">
+              <div className="flex flex-wrap justify-center md:justify-start items-center gap-4 sm:gap-6 text-sm text-neutral-800">
                 <div>
                   <span className="font-bold text-base">{nutritionCalories != null ? Math.round(Number(nutritionCalories)) : "—"}</span>{" "}
                   <span className="text-neutral-500 text-xs uppercase">kcal</span>
                 </div>
-                <div className="w-px h-4 bg-neutral-300 dark:bg-neutral-700" />
+                <div className="w-px h-4 bg-neutral-300" />
                 <div>
                   <span className="font-bold text-base">{nutritionFat != null ? `${nutritionFat}g` : "—"}</span>{" "}
                   <span className="text-neutral-500 text-xs uppercase">Fat</span>
                 </div>
-                <div className="w-px h-4 bg-neutral-300 dark:bg-neutral-700" />
+                <div className="w-px h-4 bg-neutral-300" />
                 <div>
                   <span className="font-bold text-base">{nutritionCarbs != null ? `${nutritionCarbs}g` : "—"}</span>{" "}
                   <span className="text-neutral-500 text-xs uppercase">Carbs</span>
                 </div>
-                <div className="w-px h-4 bg-neutral-300 dark:bg-neutral-700" />
+                <div className="w-px h-4 bg-neutral-300" />
                 <div>
                   <span className="font-bold text-base">{nutritionProtein != null ? `${nutritionProtein}g` : "—"}</span>{" "}
                   <span className="text-neutral-500 text-xs uppercase">Protein</span>
@@ -398,7 +398,7 @@ export function EditorialRecipeLayout({
               {recipe.tags.map((tag, idx) => (
                 <span 
                   key={idx}
-                  className="border border-neutral-400/60 dark:border-neutral-700 px-3.5 py-1 text-xs font-medium tracking-wider uppercase text-neutral-700 dark:text-neutral-300 bg-neutral-100/40 dark:bg-neutral-800/40"
+                  className="border border-neutral-400/60 px-3.5 py-1 text-xs font-medium tracking-wider uppercase text-neutral-700 bg-neutral-100/40"
                 >
                   {tag}
                 </span>

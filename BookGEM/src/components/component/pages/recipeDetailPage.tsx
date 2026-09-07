@@ -585,9 +585,9 @@ export function RecipeDetailPage() {
         <div 
           ref={scrollContainerRef}
           onScroll={handleScroll}
-          className="flex-1 min-w-0 overflow-y-auto overflow-x-hidden scroll-smooth p-10 "
+          className="flex-1 min-w-0 overflow-y-auto overflow-x-hidden scroll-smooth p-6 md:p-10"
         >
-          <div className=" shadow-2xl">
+          <div className="shadow-2xl bg-white text-neutral-900 rounded-3xl overflow-hidden border border-neutral-200/80">
           {layoutStyle === "editorial" ? (
             <EditorialRecipeLayout {...layoutProps} />
           ) : (
