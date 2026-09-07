@@ -100,7 +100,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
 
         {/* Dish Cover Image */}
         {finalUrl ? (
-          <div className="relative h-48 w-full overflow-hidden bg-muted shadow-xs">
+          <div className="relative lg:h-48 h-30 md:h- 40 w-full overflow-hidden bg-muted shadow-xs">
             <img 
               src={finalUrl} 
               alt={title} 
@@ -124,8 +124,8 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
       </div>
 
       {/* Card Content */}
-      <div className="p-6 space-y-4 flex-1 flex flex-col justify-between">
-        <div className="space-y-4">
+      <div className="p-6 space-y-2 md:space-y-4 lg:space-y-4 flex-1 flex flex-col justify-between">
+        <div className="space-y-2 md:space-y-4 lg:space-y-4">
           {/* Header Metadata */}
           <div className="flex items-center justify-between">
             <span className="text-xs font-bold uppercase tracking-wider text-[#CBA328]">
@@ -134,9 +134,9 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
           </div>
 
           <div>
-            <h3 className="text-xl font-bold line-clamp-1">{title}</h3>
+            <h3 className="lg:text-xl text-sm md:block font-bold line-clamp-5">{title}</h3>
             {description && (
-              <p className="text-sm text-muted-foreground line-clamp-2 mt-1">{description}</p>
+              <p className="lg:text-sm md:text-sm hidden  md:block lg:text-muted-foreground md:text-muted-foreground lg:line-clamp-2 md:line-clamp-1 mt-1">{description}</p>
             )}
           </div>
         </div>
@@ -168,7 +168,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
             <div className="text-sm space-y-2">
               <div className="flex items-center justify-between gap-2 text-xs flex-wrap">
                 {recipe.difficulty ? (
-                  <span className={`px-2.5 py-0.5 rounded-md font-semibold capitalize ${
+                  <span className={` md:block md:px-2.5 lg:px-2.5 px-1.5 py-0.5 rounded-md font-semibold capitalize ${
                     recipe.difficulty.toLowerCase() === 'easy'
                       ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
                       : recipe.difficulty.toLowerCase() === 'medium'
@@ -181,13 +181,13 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
 
                 <div className="flex items-center gap-2 ml-auto">
                   {recipe.totalMinutes && (
-                    <span className="bg-muted px-2 py-0.5 rounded-md font-medium text-muted-foreground flex items-center gap-1">
+                    <span className="bg-muted px-1 py-0.5 md:px-1.5 lg:px-2 rounded-md font-medium text-muted-foreground flex items-center gap-1">
                       <Clock className="h-3 w-3 text-muted-foreground shrink-0" />
                       <span>{recipe.totalMinutes}m</span>
                     </span>
                   )}
                   {recipe.servings && (
-                    <span className="bg-muted px-2 py-0.5 rounded-md font-medium text-muted-foreground flex items-center gap-1">
+                    <span className="bg-muted px-1 py-0.5 md:px-1.5 lg:px-2 rounded-md font-medium text-muted-foreground flex items-center gap-1">
                       <Users className="h-3 w-3 text-muted-foreground shrink-0" />
                       <span>{recipe.servings}</span>
                     </span>
