@@ -168,7 +168,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
             <div className="text-sm space-y-2">
               <div className="flex items-center justify-between gap-2 md:text-xs text-[10px] flex-wrap">
                 {recipe.difficulty ? (
-                  <span className={` md:block md:px-2.5 lg:px-2.5 px-1.5 py-0.5 rounded-md font-semibold capitalize   ${
+                  <span className={` md:block md:px-2.5 lg:px-2.5 px-1 py-0.5 rounded-md font-semibold capitalize   ${
                     recipe.difficulty.toLowerCase() === 'easy'
                       ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
                       : recipe.difficulty.toLowerCase() === 'medium'
@@ -179,7 +179,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
                   </span>
                 ) : <div />}
 
-                <div className="flex items-center gap-2 ml-auto">
+                <div className="flex items-center gap-1 md:gap-2 ml-auto">
                   {recipe.totalMinutes && (
                     <span className="bg-muted px-1 py-0.5 md:px-1.5 lg:px-2 rounded-md font-medium text-muted-foreground flex items-center gap-1">
                       <Clock className="h-3 w-3 text-muted-foreground shrink-0" />
@@ -187,7 +187,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
                     </span>
                   )}
                   {recipe.servings && (
-                    <span className="bg-muted px-1 py-0.5 md:px-1.5 lg:px-2 rounded-md font-medium text-muted-foreground flex items-center gap-1">
+                    <span className=" hidden md:block md:bg-muted px-1 py-0.5 md:px-1.5 lg:px-2 md:rounded-md md:font-medium md:text-muted-foreground md:flex md:items-center md:gap-1">
                       <Users className="h-3 w-3 text-muted-foreground shrink-0" />
                       <span>{recipe.servings}</span>
                     </span>
