@@ -32,7 +32,7 @@ interface SidebarProps {
 
 const mainNavItems: NavItem[] = [
   { title: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-  { title: "Cookbooks", href: "/cookbooks", icon: BookOpen, disabled: true, badge: "Disabled" },
+  { title: "Cookbooks", href: "/cookbooks", icon: BookOpen, disabled: true, badge: "" },
   { title: "Recipes", href: "/recipes", icon: Utensils },
   { title: "Saved Gems", href: "/saved", icon: Bookmark },
 ]
@@ -188,7 +188,7 @@ export function Sidebar({ className, onCreateProject }: SidebarProps) {
 
         {/* Mobile Footer / Theme & Settings & Clerk User Profile */}
         <div className="p-3 border-t space-y-2 justify-start flex flex-col">
-          <div className="flex items-center justify-between px-3 py-1">
+          <div className="flex items-center justify-center ">
             <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider"></span>
             <ThemeToggle variant="pill" />
           </div>
@@ -196,13 +196,13 @@ export function Sidebar({ className, onCreateProject }: SidebarProps) {
           <Link
             to="/settings"
             onClick={() => setIsMobileOpen(false)}
-            className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors w-full"
+            className="flex items-center justify-start gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors w-full"
           >
             <Settings className="h-5 w-5 shrink-0" />
             <span>Settings</span>
           </Link>
 
-          <div className="pt-1 flex items-center gap-3 px-3 py-1.5 rounded-xl text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors w-full">
+          <div className="pt-1 flex items-center justify-start gap-3 px-2 py-1.5 rounded-xl text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors w-full">
             <SignedIn>
               <UserButton afterSignOutUrl="/" />
               {user && (
@@ -309,7 +309,7 @@ export function Sidebar({ className, onCreateProject }: SidebarProps) {
         <div className="p-3 border-t space-y-1.5 justify-start flex flex-col">
           {/* Theme Selector / Toggle */}
           {!isCollapsed ? (
-            <div className="flex items-center justify-between px-3 py-1">
+            <div className="flex items-center justify-center px-3 py-1">
               <span className="text-xs font-medium text-muted-foreground"></span>
               <ThemeToggle variant="pill" />
             </div>
@@ -322,13 +322,13 @@ export function Sidebar({ className, onCreateProject }: SidebarProps) {
           <Link
             to="/settings"
             title={isCollapsed ? "Settings" : undefined}
-            className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors w-full"
+            className="flex items-center justify-start gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors w-full"
           >
             <Settings className="h-5 w-5 shrink-0" />
             {!isCollapsed && <span>Settings</span>}
           </Link>
 
-          <div className={cn("pt-1 flex items-center gap-3 rounded-xl text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors w-full", isCollapsed ? "justify-center" : "px-3 py-1.5")}>
+          <div className={cn("pt-1 flex justify-start items-center gap-3 rounded-xl text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors w-full", isCollapsed ? "justify-center" : "px-3 py-1.5")}>
             <SignedIn>
               <UserButton afterSignOutUrl="/" />
               {!isCollapsed && user && (
