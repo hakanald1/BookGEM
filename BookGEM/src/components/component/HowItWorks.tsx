@@ -26,16 +26,16 @@ export function HowItWorks() {
   ];
 
   return (
-    <section className="w-full py-24 bg-[#fdfbf7]">
+    <section className="w-full py-24 bg-background transition-colors">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#9b7606] bg-[#CBA328]/10 px-3.5 py-1 rounded-full border border-[#CBA328]/20">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#CBA328] bg-[#CBA328]/10 px-3.5 py-1 rounded-full border border-[#CBA328]/20">
             Simple 3-Step Process
           </span>
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground">
             How BookGEM Brings Your Recipes To Life
           </h2>
-          <p className="text-gray-600 text-base leading-relaxed">
+          <p className="text-muted-foreground text-base leading-relaxed">
             No design experience required. Turn your favorite kitchen creations and scribbled family notes into a publication-worthy cookbook.
           </p>
         </div>
@@ -46,21 +46,21 @@ export function HowItWorks() {
             return (
               <div
                 key={idx}
-                className="relative bg-white rounded-3xl p-8 border border-gray-200/80 shadow-xs flex flex-col justify-between hover:shadow-lg transition-all group hover:border-[#CBA328]/40"
+                className="relative bg-card text-card-foreground rounded-3xl p-8 border border-border shadow-xs flex flex-col justify-between hover:shadow-lg transition-all group hover:border-[#CBA328]/40"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-2xl bg-[#CBA328]/10 text-[#9b7606] flex items-center justify-center group-hover:bg-[#CBA328] group-hover:text-black transition-colors">
+                    <div className="w-12 h-12 rounded-2xl bg-[#CBA328]/10 text-[#CBA328] flex items-center justify-center group-hover:bg-[#CBA328] group-hover:text-black transition-colors">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="font-playfair text-3xl font-extrabold text-gray-300 group-hover:text-[#9b7606] transition-colors">
+                    <span className="font-playfair text-3xl font-extrabold text-muted-foreground/30 group-hover:text-[#CBA328] transition-colors">
                       {item.step}
                     </span>
                   </div>
-                  <h3 className="font-playfair text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="font-playfair text-xl font-bold text-foreground mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </div>

@@ -33,7 +33,7 @@ export function FeatureTwo() {
                 </div>
                 <div>
                     <h2 className="text-3xl md:text-4xl font-bold font-playfair">Tweak your recipes, keep them sorted, actually find them when you need them</h2>
-                    <p className="mt-4 text-gray-600 leading-relaxed">Keep your recipes in one place — old favorites, the family stuff nobody ever wrote down, whatever you're messing around with this week. Change the servings, fix the steps, mess with the seasoning until it tastes like it should.</p>
+                    <p className="mt-4 text-muted-foreground leading-relaxed">Keep your recipes in one place — old favorites, the family stuff nobody ever wrote down, whatever you're messing around with this week. Change the servings, fix the steps, mess with the seasoning until it tastes like it should.</p>
                 </div>
             </div>
         </div>

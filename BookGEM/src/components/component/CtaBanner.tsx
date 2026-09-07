@@ -4,7 +4,7 @@ import { ArrowRight, ChefHat } from "lucide-react";
 
 export function CtaBanner() {
   return (
-    <section className="w-full py-16 px-6 bg-[#fdfbf7]">
+    <section className="w-full py-16 px-6 bg-background transition-colors">
       <div className="max-w-6xl mx-auto rounded-3xl bg-gradient-to-r from-zinc-950 via-[#1c1917] to-zinc-900 text-white p-10 md:p-16 border border-[#CBA328]/30 shadow-2xl relative overflow-hidden text-center space-y-6">
         {/* Soft Ambient Glow */}
         <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#CBA328]/15 rounded-full blur-3xl opacity-60" />

@@ -30,7 +30,7 @@ unicode: "fd91"
 </svg>
                     </div>
                     <h1 className="text-4xl font-bold font-playfair">Cook up new recipe ideas — even the weird, hyper-specific ones — in seconds</h1>
-                <p className="mt-4 text-gray-600 leading-relaxed"> BookGEM's recipe engine throws out dish ideas, dietary swaps, and whatever's hot in food this month. Tell it what's in your fridge, and it handles the pairing and scaling math so you're not doing it by hand.
+                <p className="mt-4 text-muted-foreground leading-relaxed"> BookGEM's recipe engine throws out dish ideas, dietary swaps, and whatever's hot in food this month. Tell it what's in your fridge, and it handles the pairing and scaling math so you're not doing it by hand.
 
 It won't taste the dish for you. But it can save you from making four mediocre versions of the same recipe before you land on the one that actually works.</p>
                 </div>

@@ -20,17 +20,15 @@ const heroPhrases = [
 export function NavHook() {
   return (
     <div 
-      className="hook-section pd-5 relative w-full min-h-screen flex flex-col justify-center items-center bg-[#fdfbf7] py-[100px] pb-80 mb-24"  
+      className="hook-section pd-5 relative w-full min-h-screen flex flex-col justify-center items-center bg-background py-[100px] pb-80 mb-24 transition-colors"  
     >
-      <DotGrid dotColor="#cbd5e1" glowColor="#9b7606" dotSize={2} gap={24} proximity={140} />
+      <DotGrid dotColor="#cbd5e1" glowColor="#CBA328" dotSize={2} gap={24} proximity={140} />
 
-
-
-      <h1 className= " font-playfair relative z-10 text-5xl md:text-6xl font-bold flex flex-col gap-1 text-center text-gray-900">
-        Quickly craft your own<span className=""> premium <span  className="gap-0 p-0 m-0 leading-10 relative inline-block">CookBook<svg className="p-0 m-0" width="242" height="30" viewBox="0 0 242 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.500122 3H241L20.0796 11.8L203.343 7.8L30.1215 18.2H203.343L81.3349 27" stroke="#9b7606" strokeWidth="6"></path></svg></span>
+      <h1 className="font-playfair relative z-10 text-5xl md:text-6xl font-bold flex flex-col gap-1 text-center text-foreground">
+        Quickly craft your own<span className=""> premium <span className="gap-0 p-0 m-0 leading-10 relative inline-block">CookBook<svg className="p-0 m-0" width="242" height="30" viewBox="0 0 242 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.500122 3H241L20.0796 11.8L203.343 7.8L30.1215 18.2H203.343L81.3349 27" stroke="#CBA328" strokeWidth="6"></path></svg></span>
   </span>
       </h1>
-      <p className=" font-playfair relative z-10 mt-5 text-center text-lg md:text-xl font-medium italic text-gray-700 min-h-[3rem] flex items-center justify-center px-4">
+      <p className="font-playfair relative z-10 mt-5 text-center text-lg md:text-xl font-medium italic text-muted-foreground min-h-[3rem] flex items-center justify-center px-4">
         <TextType 
           text={heroPhrases}
           typingSpeed={40}
@@ -41,7 +39,7 @@ export function NavHook() {
 
       <div className="relative z-10 flex flex-col sm:flex-row items-center gap-4 mt-6">
         <Link to="/signup">
-          <Button className="px-10 py-6 rounded-full text-base font-bold text-black shadow-lg gap-2 cursor-pointer">
+          <Button className="px-10 py-6 rounded-full text-base font-bold shadow-lg gap-2 cursor-pointer">
             <span>Get Started</span>
             <ArrowRight className="w-4 h-4" />
           </Button>
@@ -49,14 +47,14 @@ export function NavHook() {
       </div>
 
      
-      <div className= " font-playfair relative w-full max-w-6xl mx-auto pointer-events-none mt-16">
+      <div className="font-playfair relative w-full max-w-6xl mx-auto pointer-events-none mt-16">
         
        
         {/* Right Card - Classic Recipe */}
-        <div className="rigth_mockup pointer-events-auto hidden lg:flex absolute right-0 -bottom-48 w-72 rounded-2xl bg-white shadow-2xl animated-card-border p-4 flex-col z-20">
+        <div className="rigth_mockup pointer-events-auto hidden lg:flex absolute right-0 -bottom-48 w-72 rounded-2xl bg-card text-card-foreground border border-border shadow-2xl animated-card-border p-4 flex-col z-20">
           <div className="flex flex-row justify-start items-center gap-2 mb-3">
-           <FileText className="w-4 h-4 text-gray-600" />
-            <span className="font-semibold text-gray-800 text-sm ">Classic Recipe</span>
+           <FileText className="w-4 h-4 text-muted-foreground" />
+            <span className="font-semibold text-foreground text-sm">Classic Recipe</span>
           </div>
           <div className="flex flex-row justify-center w-full">
             <img
@@ -68,10 +66,10 @@ export function NavHook() {
         </div>
 
         {/* Center Card - Full CookBook */}
-        <div className="center_mockup pointer-events-auto hidden md:flex absolute left-1/2 -translate-x-1/2 -bottom-[420px] w-[60%] max-w-[90%] rounded-2xl bg-white shadow-2xl animated-card-border p-4 flex-col z-10">
+        <div className="center_mockup pointer-events-auto hidden md:flex absolute left-1/2 -translate-x-1/2 -bottom-[420px] w-[60%] max-w-[90%] rounded-2xl bg-card text-card-foreground border border-border shadow-2xl animated-card-border p-4 flex-col z-10">
           <div className="flex flex-row justify-center items-center gap-2 mb-3">
-           <FileText className="w-4 h-4 text-gray-600" />
-            <span className="font-semibold text-gray-800 text-sm">Full CookBook</span>
+           <FileText className="w-4 h-4 text-muted-foreground" />
+            <span className="font-semibold text-foreground text-sm">Full CookBook</span>
           </div>
           <div className="flex flex-row justify-center w-full">
             <img
@@ -83,10 +81,10 @@ export function NavHook() {
         </div>
 
         {/* Left Card - Minimalist Recipe Page */}
-        <div className="left_mockup pointer-events-auto hidden lg:flex absolute left-0 -bottom-80 w-72 rounded-2xl bg-white shadow-2xl animated-card-border p-4 flex-col z-5">
+        <div className="left_mockup pointer-events-auto hidden lg:flex absolute left-0 -bottom-80 w-72 rounded-2xl bg-card text-card-foreground border border-border shadow-2xl animated-card-border p-4 flex-col z-5">
           <div className="flex flex-row justify-start items-center gap-2 mb-3">
-            <FileText className="w-4 h-4 text-gray-600" />
-            <span className="font-semibold text-gray-800 text-sm">Minimalist Recipe Page</span>
+            <FileText className="w-4 h-4 text-muted-foreground" />
+            <span className="font-semibold text-foreground text-sm">Minimalist Recipe Page</span>
           </div>
           <div className="flex flex-row justify-center w-full">
             <img

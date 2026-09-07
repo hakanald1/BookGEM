@@ -1,5 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { ThemeProvider } from './components/theme/theme-provider'
 import LandingPage from './components/component/pages/landingPage'
 import { Signup } from './components/component/pages/signup'
 import { Login } from './components/component/pages/login'
@@ -12,7 +13,8 @@ import { AuthPageSkeleton } from './components/component/auth/AuthSkeleton'
 
 function App() {
   return (
-    <BrowserRouter>
+    <ThemeProvider defaultTheme="system" storageKey="bookgem-theme">
+      <BrowserRouter>
       <Routes>
         <Route 
           path="/" 
@@ -77,6 +79,7 @@ function App() {
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Routes>
     </BrowserRouter>
+    </ThemeProvider>
   )
 }
 

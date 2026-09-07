@@ -27,7 +27,7 @@ export function FeatureThree() {
 </svg>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold font-playfair">Format & Publish Beautiful, Professional Cookbooks</h2>
-                    <p className="mt-4 text-gray-600 leading-relaxed">Turn your recipes into a real cookbook, printed or digital, no design skills needed. It handles the layout and the table of contents, and it'll even work out nutrition info for you.</p>
+                    <p className="mt-4 text-muted-foreground leading-relaxed">Turn your recipes into a real cookbook, printed or digital, no design skills needed. It handles the layout and the table of contents, and it'll even work out nutrition info for you.</p>
                 </div>
             </div>
             <div className="w-full flex items-center justify-center">

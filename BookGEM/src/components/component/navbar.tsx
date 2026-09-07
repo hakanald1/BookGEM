@@ -9,6 +9,7 @@ import {
   CircleDashedIcon,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme/theme-toggle"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -137,9 +138,10 @@ export function NavigationMenuComponent() {
 
 
     <div className="flex items-center gap-3">
+      <ThemeToggle />
       <SignedOut>
         <Link to="/login">
-          <Button variant="ghost" size="lg" className="px-[20px] py-[10px] text-gray-600 text-md">
+          <Button variant="ghost" size="lg" className="px-[20px] py-[10px] text-muted-foreground hover:text-foreground text-md">
             Login
           </Button>
         </Link>

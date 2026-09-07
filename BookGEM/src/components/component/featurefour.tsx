@@ -33,7 +33,7 @@ export function FeatureFour() {
                 </div>
                 <div>
                     <h2 className=" font-playfair text-3xl md:text-4xl font-bold">Share & Monetize Your Custom Cookbooks</h2>
-                    <p className="mt-4 text-gray-600 leading-relaxed">Take your culinary passion to the next level. Export print-ready PDFs for Amazon KDP, self-publish custom cookbooks, or share digital downloads with your audience to build your food brand and earn income.</p>
+                    <p className="mt-4 text-muted-foreground leading-relaxed">Take your culinary passion to the next level. Export print-ready PDFs for Amazon KDP, self-publish custom cookbooks, or share digital downloads with your audience to build your food brand and earn income.</p>
                 </div>
             </div>
         </div>

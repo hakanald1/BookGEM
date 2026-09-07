@@ -12,14 +12,14 @@ import { Footer } from '@/components/component/Footer'
 
 export function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#fdfbf7] flex flex-col font-sans selection:bg-[#CBA328]/30 selection:text-black">
+    <div className="min-h-screen bg-background text-foreground flex flex-col font-sans selection:bg-[#CBA328]/30 selection:text-foreground">
       <NavigationMenuComponent />
       <NavHook />
       <StatsBar />
       <HowItWorks />
       
       {/* Features Showcase Container */}
-      <section className="w-full bg-[#fdfbf7] space-y-12">
+      <section className="w-full bg-background space-y-12">
         <FeatureOne />
         <FeatureTwo />
         <FeatureThree />

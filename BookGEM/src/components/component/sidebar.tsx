@@ -15,6 +15,7 @@ import {
   X
 } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { ThemeToggle } from "@/components/theme/theme-toggle"
 
 interface NavItem {
   title: string
@@ -185,8 +186,13 @@ export function Sidebar({ className, onCreateProject }: SidebarProps) {
           </div>
         </div>
 
-        {/* Mobile Footer / Settings & Clerk User Profile */}
-        <div className="p-3 border-t space-y-1 justify-start flex flex-col">
+        {/* Mobile Footer / Theme & Settings & Clerk User Profile */}
+        <div className="p-3 border-t space-y-2 justify-start flex flex-col">
+          <div className="flex items-center justify-between px-3 py-1">
+            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Theme</span>
+            <ThemeToggle variant="pill" />
+          </div>
+
           <Link
             to="/settings"
             onClick={() => setIsMobileOpen(false)}
@@ -299,8 +305,20 @@ export function Sidebar({ className, onCreateProject }: SidebarProps) {
           </div>
         </div>
 
-        {/* Footer / Settings & User Profile */}
-        <div className="p-3 border-t space-y-1 justify-start flex flex-col">
+        {/* Footer / Theme & Settings & User Profile */}
+        <div className="p-3 border-t space-y-1.5 justify-start flex flex-col">
+          {/* Theme Selector / Toggle */}
+          {!isCollapsed ? (
+            <div className="flex items-center justify-between px-3 py-1">
+              <span className="text-xs font-medium text-muted-foreground">Theme</span>
+              <ThemeToggle variant="pill" />
+            </div>
+          ) : (
+            <div className="flex justify-center py-1">
+              <ThemeToggle />
+            </div>
+          )}
+
           <Link
             to="/settings"
             title={isCollapsed ? "Settings" : undefined}
