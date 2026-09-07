@@ -100,7 +100,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
 
         {/* Dish Cover Image */}
         {finalUrl ? (
-          <div className="relative lg:h-48 h-30 md:h- 40 w-full overflow-hidden bg-muted shadow-xs">
+          <div className="relative lg:h-48  md:h-40 md:block h-30  w-full overflow-hidden bg-muted shadow-xs">
             <img 
               src={finalUrl} 
               alt={title} 
@@ -124,7 +124,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
       </div>
 
       {/* Card Content */}
-      <div className="p-6 space-y-2 md:space-y-4 lg:space-y-4 flex-1 flex flex-col justify-between">
+      <div className="p-2 space-y-2 md:space-y-4 lg:space-y-4 flex-1 flex flex-col justify-between">
         <div className="space-y-2 md:space-y-4 lg:space-y-4">
           {/* Header Metadata */}
           <div className="flex items-center justify-between">
