@@ -124,11 +124,11 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
       </div>
 
       {/* Card Content */}
-      <div className="p-2 space-y-2 md:space-y-4 lg:space-y-4 flex-1 flex flex-col justify-between">
+      <div className="p-2.5 md:p-4 lg:p-6 space-y-2 md:space-y-4 lg:space-y-4 flex-1 flex flex-col justify-between">
         <div className="space-y-2 md:space-y-4 lg:space-y-4">
           {/* Header Metadata */}
           <div className="flex items-center justify-between">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#CBA328]">
+            <span className="md:text-xs text-[10px] font-bold uppercase tracking-wider text-[#CBA328]">
               {kindLabel}
             </span>
           </div>
@@ -146,7 +146,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
           {cookbook && cookbook.recipes && (
             <div className="text-sm space-y-2">
               <p className="text-xs font-semibold text-muted-foreground uppercase flex items-center justify-between">
-                <span>Recipes ({cookbook.recipes.length})</span>
+                <span className>Recipes ({cookbook.recipes.length})</span>
               </p>
               <ul className="space-y-1">
                 {cookbook.recipes.slice(0, 3).map((r) => (
