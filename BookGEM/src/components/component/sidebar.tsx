@@ -189,7 +189,7 @@ export function Sidebar({ className, onCreateProject }: SidebarProps) {
         {/* Mobile Footer / Theme & Settings & Clerk User Profile */}
         <div className="p-3 border-t space-y-2 justify-start flex flex-col">
           <div className="flex items-center justify-between px-3 py-1">
-            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Theme</span>
+            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider"></span>
             <ThemeToggle variant="pill" />
           </div>
 
@@ -310,7 +310,7 @@ export function Sidebar({ className, onCreateProject }: SidebarProps) {
           {/* Theme Selector / Toggle */}
           {!isCollapsed ? (
             <div className="flex items-center justify-between px-3 py-1">
-              <span className="text-xs font-medium text-muted-foreground">Theme</span>
+              <span className="text-xs font-medium text-muted-foreground"></span>
               <ThemeToggle variant="pill" />
             </div>
           ) : (

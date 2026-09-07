@@ -459,14 +459,14 @@ export function RecipeDetailPage() {
       <div className="flex-1 flex flex-col min-w-0 h-full overflow-hidden border-l border-neutral-200/60 dark:border-neutral-800/60">
         
         {/* Fixed Top Control Bar - Docked at the top, does NOT scroll */}
-        <header className="shrink-0 z-40 pl-14 pr-4 md:px-8 py-3.5 border-b border-neutral-200/80 dark:border-neutral-800/80 flex flex-wrap items-center justify-between gap-4 bg-[#fbf9f8]/95 dark:bg-[#121314]/95 backdrop-blur-md print:hidden">
+        <header className="shrink-0 z-40 pl-4 pr-4 md:px-8 py-3.5 border-b border-neutral-200/80 dark:border-neutral-800/80 flex flex-wrap items-center justify-between gap-4 bg-[#fbf9f8]/95 dark:bg-[#121314]/95 backdrop-blur-md print:hidden">
           <Button 
             variant="ghost" 
             size="sm"
             onClick={() => navigate(-1)}
             className="gap-2 text-neutral-600 dark:text-neutral-400 hover:text-neutral-950 dark:hover:text-white cursor-pointer text-xs uppercase tracking-wider font-medium"
           >
-            <ArrowLeft className="h-3.5 w-3.5" /> Back to Recipes
+            <ArrowLeft className="h-3.5 w-3.5" /> Back
           </Button>
 
           {/* UI Layout Style Dropdown Switcher */}
@@ -544,7 +544,7 @@ export function RecipeDetailPage() {
               variant="outline"
               size="sm"
               onClick={() => toggleSaveRecipe(recipe)}
-              className={`gap-1.5 text-xs font-medium cursor-pointer border-neutral-300 dark:border-neutral-700 ${
+              className={` hidden md:block md:gap-1.5 md:text-xs md:font-medium md:cursor-pointer md:border-neutral-300 md:dark:border-neutral-700 ${
                 isSaved ? 'text-[#775a19] border-[#775a19]/50 bg-[#775a19]/10' : ''
               }`}
             >
@@ -556,7 +556,7 @@ export function RecipeDetailPage() {
               variant="outline" 
               size="sm" 
               onClick={handleShare} 
-              className="gap-1.5 text-xs font-medium cursor-pointer border-neutral-300 dark:border-neutral-700"
+              className=" hidden md:block md:gap-1.5 md:text-xs md:font-medium md:cursor-pointer md:border-neutral-300 md:dark:border-neutral-700"
             >
               {copiedLink ? <Check className="h-3.5 w-3.5 text-emerald-600" /> : <Share2 className="h-3.5 w-3.5" />}
               {copiedLink ? 'Copied' : 'Share'}
