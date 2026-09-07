@@ -146,7 +146,7 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
           {cookbook && cookbook.recipes && (
             <div className="text-sm space-y-2">
               <p className="text-xs font-semibold text-muted-foreground uppercase flex items-center justify-between">
-                <span className>Recipes ({cookbook.recipes.length})</span>
+                <span>Recipes ({cookbook.recipes.length})</span>
               </p>
               <ul className="space-y-1">
                 {cookbook.recipes.slice(0, 3).map((r) => (
