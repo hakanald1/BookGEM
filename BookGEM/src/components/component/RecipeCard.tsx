@@ -168,12 +168,12 @@ export function RecipeCard({ recipe, cookbook, onOpen, showBookmark = true, date
             <div className="text-sm space-y-2">
               <div className="flex items-center justify-between gap-2 md:text-xs text-[10px] flex-wrap">
                 {recipe.difficulty ? (
-                  <span className={` md:block md:px-2.5 lg:px-2.5 px-1 py-0.5 rounded-md font-semibold capitalize   ${
+                  <span className={` md:block md:px-2.5 lg:px-2.5 px-1 py-0.5 rounded-md font-normal leading-5 capitalize   ${
                     recipe.difficulty.toLowerCase() === 'easy'
-                      ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
+                      ? 'italic text-gray-500 dark:text-white-600 '
                       : recipe.difficulty.toLowerCase() === 'medium'
-                      ? 'bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30'
-                      : 'bg-red-500/15 text-red-600 dark:text-red-400 border border-red-500/30'
+                      ? 'italic  text-gray-500 dark:text-white-600'
+                      : 'italic text-gray-500 dark:text-white-600'
                   }`}>
                     {recipe.difficulty}
                   </span>

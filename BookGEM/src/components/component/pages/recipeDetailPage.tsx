@@ -539,12 +539,12 @@ export function RecipeDetailPage() {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex items-center gap-2.5">
+          <div className="flex  items-center gap-2.5">
             <Button
               variant="outline"
               size="sm"
               onClick={() => toggleSaveRecipe(recipe)}
-              className={` hidden md:block md:gap-1.5 md:text-xs md:font-medium md:cursor-pointer md:border-neutral-300 md:dark:border-neutral-700 ${
+              className={` hidden md:flex md:flex-row md:block md:gap-1.5 md:text-xs md:font-medium md:cursor-pointer md:border-neutral-300 md:dark:border-neutral-700 ${
                 isSaved ? 'text-[#775a19] border-[#775a19]/50 bg-[#775a19]/10' : ''
               }`}
             >
